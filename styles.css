@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: 'karla', sans-serif;
+    color: hsl(204, 43%, 93%);
+}
+h5{
+ padding: 20px;
+}
+p{
+    padding: 0 0 10px 20px;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-right: 20px;
+}
+.wrapper{
+    width: 80%;
+    margin: 20% auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 40px hsl(218, 22%, 67%);
+}
+.join-us{
+    background-color: hsl(210, 100%, 100%);
+    padding-bottom: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.subscription-plans{
+    background-color: hsl(179, 62%, 43%);
+}
+.why-us{
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.8;   
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 20px;
+}
+
+.join-us h5:first-child {
+    font-weight: 700;
+    font-size: 1em;
+    color: hsl(179, 62%, 43%);
+}
+.join-us h5:nth-child(2){
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    padding-top: 0;
+}
+.join-us p{
+    line-height: 1.5;
+    color: hsl(218, 22%, 67%);
+}
+.price{
+    font-size: 1.9em;
+    font-weight: 700;
+    margin-right: 5px;
+}
+button{
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: hsl(204, 43%, 93%);
+    font-family: 'karla', sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    width: 80%;
+    padding: 12px;
+    margin: 20px 20px;
+    
+}
+ul{
+    list-style-type: none;
+    font-size: 0.7em;
+    font-weight: 100;
+    margin: auto 20px;
+    line-height: 1.5;
+}
+
+
+@media screen and (min-width: 1000px){
+    body{
+        font-size: 1.2em;
+    }
+    .wrapper{
+        width: 50vw;
+        height: 100%;
+        margin: 10% auto;
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        grid-template-rows: 3, 1fr;
+    }
+    .join-us{
+        grid-area: 1/1/2/3;
+    }
+    .subscription-plans{
+        border-bottom-left-radius: 5px;
+    }
+    .why-us{
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+    h5, p, li{
+        margin-left: 20px;
+    }
+    h5{
+        margin-top: 15px;
+    }
+    button{
+        margin: 20px 40px;
+        position: sticky;
+    }
+
+    @media screen and (min-width:) {
+        
+    }
+}
+
+@media screen and (min-width: 760px){
+    h5, p, li{
+        margin-left: 20px;
+    }
+    button{
+        margin-left: 40px;
+    }
+}
